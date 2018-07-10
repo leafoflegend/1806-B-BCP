@@ -38,6 +38,9 @@ let arrayToSplice = [1, 2, 3, 4, 5];
 // (startIdx, deleteCount, ...insertableElements) => elemsThatWereRemoved
 
 // let arrayToSplice = [1, 2, 3, 4, 5];
+let returnedElem = arrayToSplice.splice(-3, 3, 'hi', 'bye', 'how are ya');
+
+console.log(arrayToSplice);
 
 // Shift -> We remove the first element of an array. -> The element removed is returned in an array.
 // let returnedElem = arrayToSplice.splice(0, 1);
@@ -53,7 +56,6 @@ let arrayToSplice = [1, 2, 3, 4, 5];
 
 // Its kind of trivial to reperform actions we already know how to do, but with splice we can mix and match...
 // Remove the final three elements from the array, and insert a bunch of stuff...
-// let returnedElem = arrayToSplice.splice(-3, 3, 'hi', 'bye', 'how are ya');
 
 // Is this function taking infinite arguments?
 // Yes. Every argument after the second, is something that will be inserted.
@@ -113,7 +115,7 @@ let ourGrid = buildAGrid(5, 5);
 
 ourGrid[2][2] = 'Treasure';
 
-console.log(ourGrid);
+// console.log(ourGrid);
 
 // How do we get the treasure?
 // We need a way to accept the array as an argument, and respond with its x, y location.
